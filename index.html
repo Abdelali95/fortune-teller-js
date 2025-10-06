@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔮 Fortune Teller</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fafafa;
+      color: #333;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #5a189a;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #7b2cbf;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #9d4edd;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔮 Fortune Teller</h1>
+  <p>Enter your name and age to discover your fortune!</p>
+
+  <input type="text" id="name" placeholder="Your Name" />
+  <input type="number" id="age" placeholder="Your Age" />
+  <button onclick="showFortune()">Tell My Fortune</button>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
